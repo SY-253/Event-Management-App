@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  html {display: table; margin: auto;}
+
+  div {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+  h1 {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url(/header.jpg);
+    height: 200px;
+    width: 1100px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  h2 {text-align: center;}
+  h5 {text-align: center;}
+</style>
+
+<head>
+  <title>Add Event</title>
+  <link href="/bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="container" style="width: 1100px">
+  <div class="card">
+    <h2 class="card-header">Update Event Form</h2>
+    <div class="card-body">
+      <!-- Set it up so when form submits, "post" request is sent to the action -->
+
+      <!-- "name" is the most crucial part as the  POST query refers to it to refer information
+       [via key value pair] -->
+      <form method="post" action="/bryan/event/add">
+        <div class="form-group">
+          <label for="id" class="col-form-label"> Event ID * </label>
+          <input id="id" name="name" type="text" class="form-control" placeholder="Enter Event Id" required [(ngModel)]="id">
+        </div>
+        <div class="form-group">
+          <label for="name" class="col-form-label"> Name *</label>
+          <input id="name" name="name" type="text" class="form-control" placeholder="Enter Name" required [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+          <label for="capacity" class="form-label">Capacity *</label>
+          <input id="capacity" name="capacity" type="number" class="form-control" placeholder="Enter Capacity" [(ngModel)]="capacity">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" (click)="onUpdateEvent()">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+</html>
+

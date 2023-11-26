@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5994c71b-e42f-409d-be49-1fdeb233abe7" name="Changes" comment="- web manifest files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2WU8ha7MpgywjlfPQIdPUXsdyRD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/xampp/htdocs/PHP_programs/week11lab_assessment",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\xampp\\htdocs\\PHP_programs\\assignment-3\\emaAngular\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\PHP_programs\assignment-3\emaAngular" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5994c71b-e42f-409d-be49-1fdeb233abe7" name="Changes" comment="" />
+      <created>1696775918158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696775918158</updated>
+      <workItem from="1696775919821" duration="1392000" />
+      <workItem from="1696778014850" duration="1271000" />
+      <workItem from="1696817666854" duration="7143000" />
+      <workItem from="1696930826407" duration="11938000" />
+      <workItem from="1697023485654" duration="12687000" />
+      <workItem from="1697100900040" duration="20626000" />
+      <workItem from="1697177335806" duration="11027000" />
+    </task>
+    <task id="LOCAL-00001" summary="- Implemented task 1.3 [Delete Event] &amp; task 3 [display operation statistics]&#10;&#10;TO DO:&#10;- Figure out how to work image into the angular html components&#10;- finish off the rest">
+      <created>1697039938844</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697039938844</updated>
+    </task>
+    <task id="LOCAL-00002" summary="- Implemented task 1.4 [display event], task 1.5 [update event], task 2 [translate API websocket] task6 [update backend endpoints] done by proxy&#10;&#10;TO DO:&#10;- Make frontend progressive&#10;- better front end for translate &amp; records&#10;- modify routing table + VM">
+      <created>1697123018755</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697123018756</updated>
+    </task>
+    <task id="LOCAL-00003" summary="- Implemented Task 5 [Turn to progressive web app]&#10;- Linked images so it works in angular html&#10;- some html &amp; css changes&#10;&#10;TO DO:&#10;- modify routing table + VM">
+      <created>1697183800233</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697183800233</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- web manifest files">
+      <created>1697185663330</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697185663330</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="- Implemented Task 1.1 [add event] &amp; Task 1.2 [list events] for Group 2 (student #2) [by proxy, also done task 6 - error 400 http status]&#10;&#10;&gt; Done the add event as well as updated &quot;invalid data&quot; component, modified small portion of the add event api to accomodate angular&#10;&#10;&gt; Done the List events as well as updated the &quot;pipe&quot; component to convert time to a better format [X hours XX minutes] &#10;&#10;&gt; added comments to some files&#10;&#10;&gt; Modified server.js to work with the current event backend (NOT CATEGORIES)&#10;&#10;&gt; Included a based page &#10;&#10;TO DO:&#10;- Figure out how to work image into the angular html components&#10;- finish off the rest" />
+    <MESSAGE value="- Implemented task 1.3 [Delete Event] &amp; task 3 [display operation statistics]&#10;&#10;TO DO:&#10;- Figure out how to work image into the angular html components&#10;- finish off the rest" />
+    <MESSAGE value="- Implemented task 1.4 [display event], task 1.5 [update event], task 2 [translate API websocket] task6 [update backend endpoints] done by proxy&#10;&#10;TO DO:&#10;- Make frontend progressive&#10;- better front end for translate &amp; records&#10;- modify routing table + VM" />
+    <MESSAGE value="- Implemented Task 5 [Turn to progressive web app]&#10;- Linked images so it works in angular html&#10;- some html &amp; css changes&#10;&#10;TO DO:&#10;- modify routing table + VM" />
+    <MESSAGE value="- web manifest files" />
+    <option name="LAST_COMMIT_MESSAGE" value="- web manifest files" />
+  </component>
+</project>

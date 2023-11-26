@@ -1,0 +1,30 @@
+<h5>Enter category details to update</h5>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+      <form method="put" action="/api/v1/category/32880545/update">
+        <div class="form-group">
+            <label for="categoryId">Category ID</label>
+            <input type="text" class="form-control" id="categoryId" placeholder="Enter category ID" required [(ngModel)]="categoryId">
+          </div>
+        
+        <br>
+        
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" required pattern="[a-zA-Z0-9\s]+" placeholder="Enter category name" required [(ngModel)]="name">
+        </div>
+        
+        <br>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea type="text" class="form-control" id="description" placeholder="Enter category description" [(ngModel)]="description"></textarea>
+        </div>
+        
+        <br>
+
+        <button type="submit" class="btn btn-primary" (click)="onUpdateCategory()">Submit</button>
+      </form>
+    </div>
+</div>

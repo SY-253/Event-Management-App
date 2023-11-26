@@ -1,0 +1,23 @@
+<div class="card shadow-sm">
+  <div class="card-body">
+    <div class="form-group">
+      <label for="text">Text to Convert</label>
+      <textarea type="text" class="form-control" id="text" [(ngModel)]="text"></textarea>
+    
+      <br>
+
+      <div *ngIf="isConverted">
+        <label for="audio">Converted Speech</label>
+        <br>
+        <audio controls>
+          <source src={{audio}} type="audio/mpeg">
+        </audio>
+
+        <br>
+      </div>
+
+      <button type="submit" class="btn btn-success" (click)="onConvertText()">Convert to Speech</button>
+    </div>  
+  </div>
+
+</div>

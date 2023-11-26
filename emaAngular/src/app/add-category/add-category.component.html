@@ -1,0 +1,32 @@
+<h5>Fill in category details and click submit</h5>
+
+<div class="container">
+  <div class="card shadow-sm">
+    <div class="card-body">
+      <form method="post" action="/api/v1/category/32880545/add">
+        <div class="form-group">
+          <label for="name">Name<span style="color: red;">*</span></label>
+          <input type="text" class="form-control" id="name" required pattern="[a-zA-Z0-9\s]+" placeholder="Enter category name" required [(ngModel)]="name">
+        </div>
+        
+        <br>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea type="text" class="form-control" id="description" placeholder="Enter category description" [(ngModel)]="description"></textarea>
+        </div>
+        
+        <br>
+
+        <div class="form-group">
+            <label for="image" class="form-label">Image</label>
+          <input type="text" class="form-control" id="image" placeholder="Enter static resource path" [(ngModel)]="image"/>
+        </div>
+
+        <br>
+
+        <button type="submit" class="btn btn-primary" (click)="onSaveCategory()">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

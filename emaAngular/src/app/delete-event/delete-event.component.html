@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+  html {display: table; margin: auto;}
+
+  div {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+  h1 {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url(/header.jpg);
+    height: 200px;
+    width: 1100px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  h2 {text-align: center;}
+  h5 {text-align: center;}
+</style>
+
+<head>
+  <meta charset="UTF-8">
+  <title>List Event</title>
+  <link href="/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+<div class="container" style="width: 1100px">
+  <br>
+  <h2> <strong> Delete event page </strong> </h2>
+  <div class="card">
+    <table class="table">
+      <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Image</th>
+        <th scope="col">Start date</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Capacity</th>
+        <th scope="col">Tickets Available</th>
+        <th scope="col">Categories</th>
+        <th scope="col">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of eventsDB">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.image}}</td>
+        <td>{{item.startDate}}</td>
+        <td>{{item.duration | transformMinute}}</td>
+        <td>{{item.capacity}}</td>
+        <td>{{item.ticketsAvailable}}</td>
+        <!-- since categoryList uses populate to retrieve all categories related, we can loop through the array to display the name -->
+        <td>
+          <ul>
+            <li *ngFor="let category of item.categoryList">{{ category.name }}</li>
+          </ul>
+        </td>
+        <!-- Calls onDeleteEvent() function and passes parameter: "item" [an event] object -->
+        <td><button type="submit" class="btn btn-danger" (click)="onDeleteEvent(item)">Delete</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+
+<footer>
+
+</footer>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+  <title>Event Management App</title>
+</head>
+
+<body>
+  <div class="album py-5">
+    <div class="container">
+      <h1 style="font-size:75px;">Event Management App [EMA]</h1>
+      
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-info" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/listcategory">Category List</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-info" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/addcategory">Add Category</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-info" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/updatecategory">Update Category</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-info" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/deletecategory">Delete Category</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-info" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/speechbot">Text To Speech</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-info" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/stats">Stats G1</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <ul class="navbar-nav">
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-primary" href="/#/listevents">Event List</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-primary" href="/#/addevent">Add Event</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-primary" href="/#/updateevent">Update Event</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-primary" href="/#/deleteevent">Delete Event</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-primary" href="/#/languagebot">Translator</a>
+          </li>
+          <li class="nav-item" style="padding-left:0.2in">
+            <a class="btn btn-primary" href="/#/statsg2">Stats G2</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <br>
+
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>Developed by: Monash Victims</p>
+  </div>
+</body>

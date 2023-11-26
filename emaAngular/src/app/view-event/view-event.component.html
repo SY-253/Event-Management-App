@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<style>
+  html {display: table; margin: auto;}
+
+  div {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+  h1 {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url(/preview.webp);
+    height: 200px;
+    width: 1100px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  h2 {text-align: center;}
+</style>
+
+<head>
+  <title>Event Details</title>
+  <link href="/bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+<div class="album py-5">
+  <div class="container" style="width: 800px">
+    <h1> Display Event </h1>
+    <div class="container">
+      <div class="col">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <h6><strong>Event ID</strong></h6>
+              <p>{{ event.id }}</p>
+
+              <h6><strong>Name</strong></h6>
+              <p>{{ event.name }}</p>
+
+              <h6><strong>Description</strong></h6>
+              <p>{{ event.description }}</p>
+
+              <h6><strong>Image</strong></h6>
+              <p>
+                {{event.image}}
+                <img [src]="event.image" alt="Event Image" width="250" height="100">
+              </p>
+
+              <h6><strong>Start Date Time</strong></h6>
+              <p>{{ event.startDate }}</p>
+
+              <h6><strong>Duration</strong></h6>
+              <p>{{ event.duration | transformMinute}}</p>
+
+              <h6><strong>Capacity</strong></h6>
+              <p>{{ event.capacity }}</p>
+
+              <h6><strong>Tickets Available</strong></h6>
+              <p>{{ event.ticketsAvailable }}</p>
+
+              <h6><strong>Category ID</strong></h6>
+              <li *ngFor="let event of event.categoryList">{{ event.name }}</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+>

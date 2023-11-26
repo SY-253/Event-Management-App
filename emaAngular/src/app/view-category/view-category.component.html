@@ -1,0 +1,48 @@
+<div class="card shadow-sm">
+  <div class="card-body">
+    <h6><strong>Object ID</strong></h6>
+    <p>{{ category._id }}</p>
+
+    <h6><strong>Category ID</strong></h6>
+    <p>{{ category.categoryId }}</p>
+
+    <h6><strong>Name</strong></h6>
+    <p>{{ category.name | transformName }}</p>
+
+    <h6><strong>Description</strong></h6>
+    <p>{{ category.description }}</p>
+
+    <h6><strong>Created Date Time</strong></h6>
+    <p>{{ category.createdAt }}</p>
+        
+    <h6><strong>Image</strong></h6>
+    <p>{{ category.image }}</p>
+    <img src={{category.image}}>
+  </div>
+
+  <div class="section">
+    <table class="table table-striped">
+      <tr>
+        <th>Event ID</th>
+        <th>Name</th>
+        <th>Start</th>
+        <th>Duration</th>
+        <th>Is Active</th>
+        <th>Capacity</th>
+        <th>Tickets Available</th>
+        <th>Action</th>
+      </tr>
+      
+      <tr *ngFor="let item of category.eventsList">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.startDate}}</td>
+        <td>{{item.duration}}</td>
+        <td><input type="checkbox" disabled checked={{item.isActive}}></td>
+        <td>{{item.capacity}}</td>
+        <td>{{item.ticketsAvailable}}</td>
+        <td><button class="btn btn-primary" (click)="showEventDetails(item.id)">View</button></td>
+      </tr>
+    </table>
+  </div>
+</div>

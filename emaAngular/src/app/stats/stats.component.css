@@ -1,0 +1,7 @@
+.card-body {
+    max-height: 150px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

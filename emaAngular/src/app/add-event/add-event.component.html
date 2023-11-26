@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  html {display: table; margin: auto;}
+
+  div {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+
+  h1 {
+    display: table-cell;
+    vertical-align: middle;
+    background-image: url(/header.jpg);
+    height: 200px;
+    width: 1100px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  h2 {text-align: center;}
+  h5 {text-align: center;}
+</style>
+
+<head>
+  <title>Add Event</title>
+  <link href="/bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="container" style="width: 1100px">
+  <div class="card">
+    <h2 class="card-header">Add Event Form</h2>
+    <div class="card-body">
+      <!-- Set it up so when form submits, "post" request is sent to the action -->
+
+      <!-- "name" is the most crucial part as the  POST query refers to it to refer information
+       [via key value pair] -->
+      <form method="post" action="/bryan/event/add">
+        <div class="form-group">
+          <label for="name" class="col-form-label"> Name *</label>
+          <input id="name" name="name" type="text" class="form-control" placeholder="Enter Name" required [(ngModel)]="name">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="description" class="col-form-label"> Description: </label>
+          <textarea id="description" name="description" type="textarea" class="form-control" [(ngModel)]="description"> </textarea>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="startDate" class="form-label">Select a Date *</label>
+          <input id="startDate" name="startDate" type="datetime-local" class="form-control" [(ngModel)]="startDate" required>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="duration" class="col-form-label">Time (In minutes) *</label>
+          <input id="duration" name="duration" type="number" class="form-control" placeholder="Enter Time (Minutes) eg: 20" [(ngModel)]="durationInMinutes" required>
+        </div>
+        <br>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="isActiveCheckbox" name="isActive" value="true"  [(ngModel)]="isActive" checked>
+          <label class="form-check-label" for="isActiveCheckbox">Is it active?</label>
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="image" class="form-label">Image URL</label>
+          <input id="image" name="image" type="text" class="form-control"
+                 placeholder="Enter path to static image resource name - ex: /hello.png " [(ngModel)]="image">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="capacity" class="form-label">Capacity</label>
+          <input id="capacity" name="capacity" type="number" class="form-control" placeholder="Enter Capacity" [(ngModel)]="capacity">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="ticketsAvailable" class="col-form-label">Tickets available?</label>
+          <input id="ticketsAvailable" name="ticketsAvailable" type="number" class="form-control"
+                 placeholder="Enter available tickets" [(ngModel)]="ticketsAvailable">
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="categoryId" class="col-form-label">Category ID *</label>
+          <input id="categoryId" name="categoryId" type="text" class="form-control" placeholder="Enter Category ID"
+                 required [(ngModel)]="categories">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" (click)="onSaveEvent()">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+
+
+</html>
+

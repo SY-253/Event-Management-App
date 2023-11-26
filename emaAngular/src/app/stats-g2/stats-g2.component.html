@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+<style>
+  .card-body {
+    max-height: 150px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+</style>
+
+<div class="container">
+  <div style="display: flex; justify-content: space-between">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">{{operationDB.recordsCreated}}</h1>
+        <p class="card-text">Records created</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">{{operationDB.recordsUpdated}}</h1>
+        <p class="card-text">Records updated</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h1 class="card-title">{{operationDB.recordsDeleted}}</h1>
+        <p class="card-text">Records deleted</p>
+      </div>
+    </div>
+  </div>
+</div>
